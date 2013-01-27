@@ -29,4 +29,4 @@ a, Consistent hashing library comes from <a href="http://www.codeproject.com/Art
 
 License:
 --------
-Under GUN License
+The ip_vs_ch is under GNU GPL v2 License
