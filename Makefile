@@ -20,6 +20,7 @@ modules:
 
 modules_install:
 	$(MAKE) -C $(KERNEL_SOURCE_DIR) M=`pwd` modules_install
+	-depmod -A
 
 #install:
 #	-cp ip_vs_ch.ko /lib/modules/`uname -r`/kernel/net/netfilter/ipvs/ 
