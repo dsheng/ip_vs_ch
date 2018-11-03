@@ -87,7 +87,7 @@ void util_rbtree_insert(util_rbtree_t *rbtree, util_rbtree_node_t *node)
 void rbtree_insert_fixup(util_rbtree_t *rbtree, util_rbtree_node_t *node)
 {
     util_rbtree_node_t *p, *u; /* u is the uncle node of node */
-    while(util_rbt_isred(node->parent))
+    while(util_rbt_isred(node->parent) && (node !=rbtree->root ))
     {
         p = node->parent;
         if(p == p->parent->left) /* parent is the left child */
